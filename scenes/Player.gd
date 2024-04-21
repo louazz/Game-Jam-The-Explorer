@@ -1,5 +1,5 @@
 extends KinematicBody2D
-export(int) var JUMP_FORCE = 80
+export(int) var JUMP_FORCE = 130
 export(int) var JUMP_RELEASE_FORCE = -70
 export(int) var GRAVITY = 4
 export(int) var ACCELERATION = 10
@@ -7,6 +7,7 @@ export(int) var FRICTION =10
 export(int) var MAX_SPEED = 50
 
 var velocity= Vector2.ZERO
+var jump = 0
 
 func _physics_process(delta):
 	apply_gravity()
@@ -29,12 +30,18 @@ func _physics_process(delta):
 		velocity.x = 200
 	else: 
 		velocity.x = 0
+	
 	if is_on_floor():
+		jump = 0
 		if Input.is_action_just_pressed("ui_up"):
 			velocity.y = -JUMP_FORCE
+			print(velocity.y)
 	else:
 		if Input.is_action_just_pressed("ui_up"):
-			velocity.y = -JUMP_FORCE
+			jump +=1
+			if jump < 2:
+				velocity.y = -JUMP_FORCE
+			# print(velocity.y)
 		$AnimatedSprite.animation = "jump"
 		var fast_fell = false
 		if Input.is_action_just_released("ui_up") and velocity.y < JUMP_RELEASE_FORCE:
