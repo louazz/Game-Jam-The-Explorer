@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://assets/AOLrun4.png" type="Texture" id=1]
 [ext_resource path="res://assets/AOLrun6.png" type="Texture" id=2]
@@ -16,9 +16,15 @@
 [ext_resource path="res://assets/AOLrun1.png" type="Texture" id=14]
 [ext_resource path="res://assets/AOLrun2.png" type="Texture" id=15]
 [ext_resource path="res://assets/AOLDecayDeath.png" type="Texture" id=16]
+[ext_resource path="res://assets/AOLDecayDamage.png" type="Texture" id=17]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
+"frames": [ ExtResource( 17 ) ],
+"loop": true,
+"name": "damage",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 16 ) ],
 "loop": true,
 "name": "death",

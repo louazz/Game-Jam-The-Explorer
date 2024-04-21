@@ -16,10 +16,17 @@ func _physics_process(delta):
 	
 	if input.x == 0:
 		apply_friction()
-		$AnimatedSprite.animation = 'idle'
+		$AnimatedSprite.animation = "idle"
 	else:
 		apply_acceleration(input.x)
-		$AnimatedSprite.animation = "run"
+		if Global.decayed == true :
+			$AnimatedSprite.animation = "damage"
+			yield(get_tree().create_timer(0.5), "timeout")
+			# OS.delay_msec(1000)
+			# $AnimatedSprite.animation = "run"
+			Global.decayed = false
+		else:
+			$AnimatedSprite.animation = "run"
 		if input.x > 0:
 			$AnimatedSprite.flip_h = false
 		else:
@@ -42,7 +49,10 @@ func _physics_process(delta):
 			if jump < 2:
 				velocity.y = -JUMP_FORCE
 			# print(velocity.y)
-		$AnimatedSprite.animation = "jump"
+		if Global.lives <3:
+			$AnimatedSprite.animation = "decayed_jump"
+		else:
+			$AnimatedSprite.animation = "jump"
 		var fast_fell = false
 		if Input.is_action_just_released("ui_up") and velocity.y < JUMP_RELEASE_FORCE:
 			velocity.y = JUMP_RELEASE_FORCE

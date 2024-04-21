@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/Intro.gd" type="Script" id=1]
 [ext_resource path="res://assets/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://assets/window_for_restart.png" type="Texture" id=3]
+[ext_resource path="res://assets/tahoma.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 46
@@ -10,7 +11,7 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 31
-font_data = ExtResource( 2 )
+font_data = ExtResource( 4 )
 
 [node name="Menu" type="Node2D"]
 script = ExtResource( 1 )

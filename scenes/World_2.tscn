@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://assets/hill_background_middle_hill.png" type="Texture" id=1]
 [ext_resource path="res://assets/hill_background_sky.png" type="Texture" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://assets/word_document_2.png" type="Texture" id=19]
 [ext_resource path="res://assets/bigger_window.png" type="Texture" id=20]
 [ext_resource path="res://assets/platform_2.png" type="Texture" id=21]
+[ext_resource path="res://assets/sea.png" type="Texture" id=22]
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
 points = PoolVector2Array( 0, 0, 660, 0, 660, 260, 0, 260 )
@@ -527,6 +528,20 @@ points = PoolVector2Array( 0, 0, 120, 0, 120, 100, 0, 100 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 20/z_index = 0
+21/name = "sea.png 21"
+21/texture = ExtResource( 22 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 0, 400, 660, 150 )
+21/tile_mode = 0
+21/occluder_offset = Vector2( 0, 0 )
+21/navigation_offset = Vector2( 0, 0 )
+21/shape_offset = Vector2( 0, 0 )
+21/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+21/shape_one_way = false
+21/shape_one_way_margin = 0.0
+21/shapes = [  ]
+21/z_index = 0
 
 [sub_resource type="DynamicFont" id=13]
 size = 35
@@ -541,16 +556,16 @@ script = ExtResource( 7 )
 position = Vector2( -126, 510 )
 tile_set = SubResource( 4 )
 format = 1
-tile_data = PoolIntArray( -851859, 15, 0, -851835, 15, 0, -851824, 15, 0, -786426, 15, 0, -786357, 15, 0, -720874, 15, 0, -720860, 15, 0, -720843, 15, 0, -720804, 15, 0, -589831, 15, 0, -655251, 15, 0, -655232, 15, 0, -589696, 15, 0, -524237, 15, 0, -524216, 15, 0, -524197, 15, 0, -524147, 15, 0, -393226, 15, 0, -458747, 15, 0, -393196, 15, 0, -393108, 15, 0, -393090, 15, 0, -327581, 19, 0, -327540, 15, 0, -196525, 8, 0, -65506, 8, 0, -65472, 12, 0, -65396, 8, 0, -65390, 8, 0, 65525, 0, 0, 65531, 0, 0, 0, 0, 0, 10, 1, 0, 20, 0, 0, 30, 1, 0, 40, 0, 0, 44, 1, 0, 48, 8, 0, 50, 1, 0, 54, 1, 0, 62, 8, 0, 64, 0, 0, 73, 1, 0, 76, 1, 0, 80, 1, 0, 86, 0, 0, 89, 1, 0, 111, 1, 0, 113, 1, 0, 117, 1, 0, 120, 1, 0, 126, 0, 0, 127, 9, 0, 129, 1, 0, 131, 0, 0, 134, 0, 0, 138, 1, 0, 139, 0, 0, 142, 0, 0, 147, 1, 0, 149, 0, 0, 131061, 0, 0, 131063, 0, 0, 131068, 0, 0, 131070, 15, 0, 65557, 8, 0, 65577, 8, 0, 65652, 8, 0, 131084, 8, 0, 131132, 8, 0, 131182, 1, 0, 131199, 8, 0, 196724, 8, 0, 196758, 8, 0, 262201, 8, 0, 262292, 8, 0, 327826, 8, 0, 393360, 8, 0, 589813, 20, 0, 589814, 20, 0, 524288, 20, 0, 524298, 20, 0, 524308, 20, 0, 524318, 20, 0, 524328, 20, 0, 524331, 20, 0, 524338, 20, 0, 524348, 20, 0, 524352, 20, 0, 524358, 20, 0, 524368, 20, 0, 524378, 20, 0, 524388, 20, 0, 524398, 20, 0, 524401, 20, 0, 524408, 20, 0, 524417, 20, 0, 524418, 20, 0, 524428, 20, 0, 524435, 20, 0, 524438, 20, 0, 655365, 3, 0, 851976, 3, 0, 851977, 3, 0, 851978, 3, 0, 851979, 3, 0, 851980, 3, 0, 851981, 3, 0, 851982, 3, 0, 851983, 3, 0, 851984, 3, 0, 851985, 3, 0, 851986, 3, 0, 851987, 3, 0, 851988, 3, 0, 851989, 3, 0, 851990, 3, 0, 851991, 3, 0, 851992, 3, 0, 851993, 3, 0, 851994, 3, 0, 851995, 3, 0, 851996, 3, 0, 851997, 3, 0, 851998, 3, 0, 851999, 3, 0, 852000, 3, 0, 852001, 3, 0, 852002, 3, 0, 852003, 3, 0, 852004, 3, 0, 852005, 3, 0, 852006, 3, 0, 852007, 3, 0, 852008, 3, 0, 852009, 3, 0, 852010, 3, 0, 852011, 3, 0, 852012, 3, 0, 852013, 3, 0, 852014, 3, 0, 852015, 3, 0, 852016, 3, 0, 852017, 3, 0, 852018, 3, 0, 852019, 3, 0 )
+tile_data = PoolIntArray( -851859, 15, 0, -851835, 15, 0, -851824, 15, 0, -786426, 15, 0, -786357, 15, 0, -720874, 15, 0, -720860, 15, 0, -720843, 15, 0, -720804, 15, 0, -589831, 15, 0, -655324, 15, 0, -655251, 15, 0, -655232, 15, 0, -589816, 15, 0, -589790, 15, 0, -589696, 15, 0, -524272, 15, 0, -524268, 15, 0, -524267, 15, 0, -524254, 15, 0, -524237, 15, 0, -524216, 15, 0, -524197, 15, 0, -524147, 15, 0, -393226, 15, 0, -458751, 15, 0, -458747, 15, 0, -458720, 15, 0, -393196, 15, 0, -393174, 15, 0, -393108, 15, 0, -393090, 15, 0, -327666, 15, 0, -327581, 19, 0, -327540, 15, 0, -196617, 15, 0, -196609, 15, 0, -196599, 15, 0, -196525, 8, 0, -131057, 15, 0, -10, 15, 0, -65506, 8, 0, -65472, 12, 0, -65396, 8, 0, -65390, 8, 0, 48, 8, 0, 62, 8, 0, 127, 9, 0, 131070, 15, 0, 65557, 8, 0, 65577, 8, 0, 65652, 8, 0, 131084, 8, 0, 131132, 8, 0, 131199, 8, 0, 196724, 8, 0, 196758, 8, 0, 262201, 8, 0, 262292, 8, 0, 327826, 8, 0, 458741, 21, 0, 458749, 21, 0, 393216, 21, 0, 393226, 21, 0, 393235, 21, 0, 393245, 21, 0, 393255, 21, 0, 393264, 21, 0, 393266, 21, 0, 393273, 21, 0, 393274, 21, 0, 393280, 21, 0, 393290, 21, 0, 393296, 21, 0, 393305, 21, 0, 393327, 21, 0, 393329, 21, 0, 393339, 21, 0, 393345, 21, 0, 393355, 21, 0, 393360, 8, 0, 393363, 21, 0, 393365, 21, 0, 589813, 20, 0, 589814, 20, 0, 524288, 20, 0, 524298, 20, 0, 524308, 20, 0, 524318, 20, 0, 524328, 20, 0, 524331, 20, 0, 524338, 20, 0, 524348, 20, 0, 524352, 20, 0, 524358, 20, 0, 524368, 20, 0, 524378, 20, 0, 524388, 20, 0, 524398, 20, 0, 524401, 20, 0, 524408, 20, 0, 524417, 20, 0, 524418, 20, 0, 524428, 20, 0, 524435, 20, 0, 524438, 20, 0, 655365, 3, 0, 851976, 3, 0, 851977, 3, 0, 851978, 3, 0, 851979, 3, 0, 851980, 3, 0, 851981, 3, 0, 851982, 3, 0, 851983, 3, 0, 851984, 3, 0, 851985, 3, 0, 851986, 3, 0, 851987, 3, 0, 851988, 3, 0, 851989, 3, 0, 851990, 3, 0, 851991, 3, 0, 851992, 3, 0, 851993, 3, 0, 851994, 3, 0, 851995, 3, 0, 851996, 3, 0, 851997, 3, 0, 851998, 3, 0, 851999, 3, 0, 852000, 3, 0, 852001, 3, 0, 852002, 3, 0, 852003, 3, 0, 852004, 3, 0, 852005, 3, 0, 852006, 3, 0, 852007, 3, 0, 852008, 3, 0, 852009, 3, 0, 852010, 3, 0, 852011, 3, 0, 852012, 3, 0, 852013, 3, 0, 852014, 3, 0, 852015, 3, 0, 852016, 3, 0, 852017, 3, 0, 852018, 3, 0, 852019, 3, 0 )
 
 [node name="Spikes" parent="TileMap" instance=ExtResource( 13 )]
-position = Vector2( 574, 162 )
+position = Vector2( 782, 322 )
 
 [node name="Spikes2" parent="TileMap" instance=ExtResource( 13 )]
-position = Vector2( 1102, 98 )
+position = Vector2( 1438, 274 )
 
 [node name="Spikes3" parent="TileMap" instance=ExtResource( 13 )]
-position = Vector2( 1694, 50 )
+position = Vector2( 2222, 210 )
 
 [node name="Spikes4" parent="TileMap" instance=ExtResource( 13 )]
 position = Vector2( 2206, 82 )
@@ -559,25 +574,25 @@ position = Vector2( 2206, 82 )
 position = Vector2( 3486, 18 )
 
 [node name="Spikes6" parent="TileMap" instance=ExtResource( 13 )]
-position = Vector2( 2686, -46 )
+position = Vector2( 3054, 274 )
 
 [node name="Spikes7" parent="TileMap" instance=ExtResource( 13 )]
-position = Vector2( 3118, -110 )
+position = Vector2( 3502, 162 )
 
 [node name="Spikes8" parent="TileMap" instance=ExtResource( 13 )]
-position = Vector2( 5358, -30 )
+position = Vector2( 5374, 210 )
 
 [node name="Spikes9" parent="TileMap" instance=ExtResource( 13 )]
-position = Vector2( 4782, -78 )
+position = Vector2( 5374, 98 )
 
 [node name="Spikes10" parent="TileMap" instance=ExtResource( 13 )]
 position = Vector2( 5678, 98 )
 
 [node name="Spikes11" parent="TileMap" instance=ExtResource( 13 )]
-position = Vector2( 5678, 98 )
+position = Vector2( 6142, 274 )
 
 [node name="Spikes12" parent="TileMap" instance=ExtResource( 13 )]
-position = Vector2( 830, 434 )
+position = Vector2( 782, 482 )
 
 [node name="Spikes13" parent="TileMap" instance=ExtResource( 13 )]
 position = Vector2( 1422, 418 )
@@ -589,16 +604,16 @@ position = Vector2( 3070, 418 )
 position = Vector2( 3950, 402 )
 
 [node name="Spikes18" parent="TileMap" instance=ExtResource( 13 )]
-position = Vector2( 4958, 370 )
+position = Vector2( 5406, 354 )
 
 [node name="Spikes21" parent="TileMap" instance=ExtResource( 13 )]
 position = Vector2( 6142, 402 )
 
 [node name="Spikes23" parent="TileMap" instance=ExtResource( 13 )]
-position = Vector2( 7950, 418 )
+position = Vector2( 8622, 98 )
 
 [node name="Spikes24" parent="TileMap" instance=ExtResource( 13 )]
-position = Vector2( 8670, 402 )
+position = Vector2( 9230, 210 )
 
 [node name="Spikes26" parent="TileMap" instance=ExtResource( 13 )]
 position = Vector2( 9198, 98 )
